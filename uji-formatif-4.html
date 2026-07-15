@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uji Formatif Bab 4 | Ilmu Usul Fikih Kelas 11 Semester 1</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#022c22',
+                            800: '#064e3b',
+                            gold: '#d4af37',
+                            goldlight: '#f3e5ab',
+                            cream: '#fafaf9',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .radio-option {
+            transition: all 0.2s ease;
+        }
+        .radio-option:hover {
+            background: rgba(212, 175, 55, 0.08);
+            border-color: #d4af37;
+        }
+        .radio-option.selected {
+            background: rgba(212, 175, 55, 0.15);
+            border-color: #d4af37;
+        }
+        .result-card {
+            display: none;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white; }
+        }
+    </style>
+</head>
+<body class="bg-luxury-cream text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-luxury-900 border-b border-luxury-gold/20 sticky top-0 z-50 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center py-4 space-y-3 sm:space-y-0">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-clipboard-check text-luxury-gold text-xl"></i>
+                    <a href="index.html" class="font-serif text-lg text-white font-semibold tracking-wide hover:text-luxury-gold transition">
+                        Uji Formatif Bab 4
+                    </a>
+                </div>
+                <nav class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
+                    <a href="index.html" class="text-gray-300 hover:text-luxury-gold transition flex items-center gap-1">
+                        <i class="fas fa-home text-xs"></i> Beranda
+                    </a>
+                    <span class="text-luxury-gold/30 hidden sm:inline">|</span>
+                    <a href="index.html#daftar-bab" class="text-gray-300 hover:text-luxury-gold transition flex items-center gap-1">
+                        <i class="fas fa-list text-xs"></i> Daftar Bab
+                    </a>
+                    <span class="text-luxury-gold/30 hidden sm:inline">|</span>
+                    <a href="4.html" class="text-gray-300 hover:text-luxury-gold transition flex items-center gap-1">
+                        <i class="fas fa-book text-xs"></i> Materi Bab 4
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+        
+        <!-- Judul -->
+        <div class="text-center mb-10">
+            <span class="inline-block px-4 py-1 border border-luxury-gold/30 rounded-full bg-luxury-gold/10 text-luxury-gold text-sm font-medium tracking-wider uppercase mb-4">
+                Evaluasi Pembelajaran
+            </span>
+            <h1 class="font-serif text-4xl sm:text-5xl font-bold text-luxury-900 mb-4">
+                📋 Uji Formatif <span class="gold-gradient-text">Bab 4</span>
+            </h1>
+            <p class="text-xl text-luxury-800 font-semibold mb-2">Al-Sunnah (Lanjutan)</p>
+            <p class="text-gray-600">Ilmu Usul Fikih Kelas 11 Semester 1 | P.P. Diniyah Limo Jurai</p>
+        </div>
+
+        <!-- Info Box -->
+        <div class="glass-card p-6 rounded-2xl shadow-md mb-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div class="flex-1">
+                    <h2 class="font-serif text-xl font-bold text-luxury-900 mb-2">📋 Petunjuk Umum</h2>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        <strong>✍️ Bagian A:</strong> Pilihan Ganda (10 soal, skor 10/soal) | 
+                        <strong>📝 Bagian B:</strong> Essay (5 soal, skor 20/soal)
+                    </p>
+                    <p class="text-sm text-gray-600 mt-2">
+                        <strong>Materi:</strong> Pembagian hadits dari segi jumlah perawi (Mutawatir & Ahad), pembagian Ahad (Masyhur, Aziz, Gharib), pembagian dari segi sanad (Muttaashil, Mursal, Mu'dhal, Munqathi'), kaidah berhujjah dengan Sunnah.
+                    </p>
+                    <p class="text-sm text-gray-600 mt-1">
+                        <strong>Waktu:</strong> Tidak terbatas | <strong>Total Skor:</strong> 200 poin
+                    </p>
+                </div>
+                <div class="bg-luxury-900 text-luxury-gold px-4 py-2 rounded-lg font-bold text-center">
+                    <i class="fas fa-clock mr-1"></i> 200 Poin
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Uji Formatif -->
+        <form id="ujianForm" class="space-y-8">
+            
+            <!-- Data Siswa -->
+            <div class="glass-card p-6 sm:p-8 rounded-2xl shadow-md">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-6 flex items-center">
+                    <i class="fas fa-user-graduate text-luxury-gold mr-3"></i> 📋 Data Siswa
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Nama Lengkap <span class="text-red-500">*</span></label>
+                        <input type="text" id="namaSiswa" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-luxury-gold outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">NIS <span class="text-red-500">*</span></label>
+                        <input type="text" id="nisSiswa" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-luxury-gold outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">📅 Tanggal Ujian</label>
+                        <input type="date" id="tanggalUjian" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-luxury-gold outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Kelas <span class="text-red-500">*</span></label>
+                        <select id="kelasSiswa" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-luxury-gold outline-none transition">
+                            <option value="">Pilih Kelas</option>
+                            <option value="XI-A">XI-A</option>
+                            <option value="XI-B">XI-B</option>
+                            <option value="XI-C">XI-C</option>
+                            <option value="XI-D">XI-D</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian A: Pilihan Ganda -->
+            <div class="glass-card p-6 sm:p-8 rounded-2xl shadow-md">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-2 flex items-center">
+                    <i class="fas fa-list-ol text-luxury-gold mr-3"></i> ✍️ Bagian A – Pilihan Ganda
+                </h2>
+                <p class="text-sm text-red-600 mb-6 flex items-center">
+                    <i class="fas fa-exclamation-triangle mr-2"></i> Lengkapi semua 10 soal pilihan ganda! Setiap soal bernilai <strong>10 poin</strong>.
+                </p>
+                
+                <div class="space-y-6" id="pgContainer">
+                    
+                    <!-- Soal 1 -->
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal 1.</span> Hadits yang diriwayatkan oleh sejumlah besar perawi pada setiap thabaqah yang menurut adat mustahil mereka bersepakat untuk berdusta disebut...</p>
+                        <div class="space-y-2">
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q1" value="a" class="mr-3"> <span>a. Hadits Ahad</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q1" value="b" class="mr-3"> <span>b. Hadits Mutawatir</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q1" value="c" class="mr-3"> <span>c. Hadits Masyhur</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q1" value="d" class="mr-3"> <span>d. Hadits Aziz</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Soal 2 -->
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal 2.</span> Hadits Mutawatir menghasilkan ilmu...</p>
+                        <div class="space-y-2">
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q2" value="a" class="mr-3"> <span>a. Zhanni (dugaan kuat)</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q2" value="b" class="mr-3"> <span>b. Dharuri (kepastian mutlak)</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q2" value="c" class="mr-3"> <span>c. Nazhari (teoretis)</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q2" value="d" class="mr-3"> <span>d. Ijtihadi (hasil ijtihad)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Soal 3 -->
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal 3.</span> Hadits yang diriwayatkan oleh tiga perawi atau lebih pada setiap thabaqah namun belum mencapai batas mutawatir disebut...</p>
+                        <div class="space-y-2">
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q3" value="a" class="mr-3"> <span>a. Hadits Gharib</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q3" value="b" class="mr-3"> <span>b. Hadits Aziz</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q3" value="c" class="mr-3"> <span>c. Hadits Masyhur</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q3" value="d" class="mr-3"> <span>d. Hadits Mutawatir</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Soal 4 -->
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal 4.</span> Hadits yang diriwayatkan oleh dua perawi saja pada salah satu thabaqah disebut...</p>
+                        <div class="space-y-2">
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q4" value="a" class="mr-3"> <span>a. Hadits Gharib</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q4" value="b" class="mr-3"> <span>b. Hadits Aziz</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q4" value="c" class="mr-3"> <span>c. Hadits Masyhur</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q4" value="d" class="mr-3"> <span>d. Hadits Mutawatir</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Soal 5 -->
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal 5.</span> Hadits yang diriwayatkan oleh satu perawi saja pada salah satu thabaqah disebut...</p>
+                        <div class="space-y-2">
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q5" value="a" class="mr-3"> <span>a. Hadits Gharib</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q5" value="b" class="mr-3"> <span>b. Hadits Aziz</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q5" value="c" class="mr-3"> <span>c. Hadits Masyhur</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q5" value="d" class="mr-3"> <span>d. Hadits Mutawatir</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Soal 6 -->
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal 6.</span> Hadits yang sanadnya terputus pada akhir sanad, yaitu seorang tabi'in langsung menyandarkan hadits kepada Nabi SAW tanpa menyebut sahabat disebut...</p>
+                        <div class="space-y-2">
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q6" value="a" class="mr-3"> <span>a. Hadits Muttaashil</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q6" value="b" class="mr-3"> <span>b. Hadits Mursal</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q6" value="c" class="mr-3"> <span>c. Hadits Mu'dhal</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q6" value="d" class="mr-3"> <span>d. Hadits Munqathi'</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Soal 7 -->
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal 7.</span> Hadits yang sanadnya terputus oleh dua perawi atau lebih secara berurutan disebut...</p>
+                        <div class="space-y-2">
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q7" value="a" class="mr-3"> <span>a. Hadits Mursal</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q7" value="b" class="mr-3"> <span>b. Hadits Mu'dhal</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q7" value="c" class="mr-3"> <span>c. Hadits Munqathi'</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q7" value="d" class="mr-3"> <span>d. Hadits Muttaashil</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Soal 8 -->
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal 8.</span> Menurut jumhur ulama, jika terjadi pertentangan antara hadits mutawatir dan hadits ahad, maka yang didahulukan adalah...</p>
+                        <div class="space-y-2">
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q8" value="a" class="mr-3"> <span>a. Hadits Ahad</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q8" value="b" class="mr-3"> <span>b. Hadits Mutawatir</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q8" value="c" class="mr-3"> <span>c. Qiyas</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q8" value="d" class="mr-3"> <span>d. Ijtihad ulama</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Soal 9 -->
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal 9.</span> Menurut jumhur ulama, hadits ahad yang sahih tidak dapat dijadikan hujjah dalam masalah...</p>
+                        <div class="space-y-2">
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q9" value="a" class="mr-3"> <span>a. Furu' (cabang hukum)</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q9" value="b" class="mr-3"> <span>b. Ibadah</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q9" value="c" class="mr-3"> <span>c. Akidah</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q9" value="d" class="mr-3"> <span>d. Muamalah</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Soal 10 -->
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal 10.</span> Hadits Mutawatir yang diriwayatkan melalui perbuatan yang dilakukan secara massal (seperti tata cara shalat) disebut...</p>
+                        <div class="space-y-2">
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q10" value="a" class="mr-3"> <span>a. Mutawatir Lafzhi</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q10" value="b" class="mr-3"> <span>b. Mutawatir Maknawi</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q10" value="c" class="mr-3"> <span>c. Mutawatir 'Amali</span>
+                            </label>
+                            <label class="radio-option flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer">
+                                <input type="radio" name="q10" value="d" class="mr-3"> <span>d. Mutawatir Qauli</span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bagian B: Essay -->
+            <div class="glass-card p-6 sm:p-8 rounded-2xl shadow-md">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-2 flex items-center">
+                    <i class="fas fa-pen-fancy text-luxury-gold mr-3"></i> 📝 Bagian B – Essay
+                </h2>
+                <p class="text-sm text-red-600 mb-6 flex items-center">
+                    <i class="fas fa-exclamation-triangle mr-2"></i> Isi Nama Lengkap dan NIS terlebih dahulu! Setiap soal essay bernilai <strong>20 poin</strong>.
+                </p>
+                
+                <div class="space-y-6">
+                    
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal Essay 1.</span> Jelaskan perbedaan mendasar antara hadits Mutawatir dan hadits Ahad ditinjau dari 4 aspek: jumlah perawi, kekuatan dalalah, ilmu yang dihasilkan, dan status kehujjahan!</p>
+                        <textarea name="essay1" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-luxury-gold outline-none transition" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal Essay 2.</span> Uraikan 3 (tiga) pembagian hadits Mutawatir (Lafzhi, Maknawi, 'Amali) beserta contoh masing-masing!</p>
+                        <textarea name="essay2" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-luxury-gold outline-none transition" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal Essay 3.</span> Jelaskan 3 (tiga) pembagian hadits Ahad (Masyhur, Aziz, Gharib) berdasarkan jumlah perawi pada setiap thabaqah, beserta contoh masing-masing!</p>
+                        <textarea name="essay3" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-luxury-gold outline-none transition" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal Essay 4.</span> Sebutkan dan jelaskan 4 (empat) jenis hadits dari segi sanad (Muttaashil, Mursal, Mu'dhal, Munqathi') beserta status kehujjahannya!</p>
+                        <textarea name="essay4" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-luxury-gold outline-none transition" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-5 bg-white">
+                        <p class="font-semibold text-luxury-900 mb-3"><span class="text-luxury-gold">Soal Essay 5.</span> Analisis bagaimana pemahaman pembagian hadits dapat membantu dalam menyelesaikan masalah kontemporer (seperti vaksinasi atau bioetika). Jelaskan dengan merujuk pada kaidah-kaidah berhujjah dengan Sunnah!</p>
+                        <textarea name="essay5" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-luxury-gold outline-none transition" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Tombol Submit -->
+            <div class="flex justify-center">
+                <button type="submit" class="gold-gradient-bg text-luxury-900 px-10 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:shadow-luxury-gold/30 transition flex items-center gap-2">
+                    <i class="fas fa-paper-plane"></i> ✉️ KIRIM JAWABAN & LIHAT HASIL
+                </button>
+            </div>
+
+        </form>
+
+        <!-- Hasil Uji Formatif -->
+        <div id="hasilUjian" class="result-card mt-10">
+            <div class="glass-card p-6 sm:p-8 rounded-2xl shadow-xl border-2 border-luxury-gold">
+                <div class="text-center mb-8">
+                    <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-luxury-gold/20 mb-4">
+                        <i class="fas fa-trophy text-luxury-gold text-4xl"></i>
+                    </div>
+                    <h2 class="font-serif text-3xl font-bold text-luxury-900 mb-2">📊 Hasil Uji Formatif</h2>
+                    <p class="text-gray-600">Terima kasih telah menyelesaikan uji formatif ini!</p>
+                </div>
+
+                <!-- Data Siswa -->
+                <div class="bg-luxury-cream p-5 rounded-lg mb-6 border border-luxury-gold/20">
+                    <h3 class="font-semibold text-luxury-900 mb-3 flex items-center"><i class="fas fa-user mr-2 text-luxury-gold"></i> Data Siswa</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+                        <p><strong>Nama:</strong> <span id="hasilNama">-</span></p>
+                        <p><strong>NIS:</strong> <span id="hasilNIS">-</span></p>
+                        <p><strong>Kelas:</strong> <span id="hasilKelas">-</span></p>
+                        <p><strong>Tanggal:</strong> <span id="hasilTanggal">-</span></p>
+                    </div>
+                </div>
+
+                <!-- Skor -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-4 rounded-lg text-center">
+                        <p class="text-xs uppercase tracking-wide mb-1">Skor PG</p>
+                        <p class="text-2xl font-bold"><span id="skorPG">0</span>/100</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 text-white p-4 rounded-lg text-center">
+                        <p class="text-xs uppercase tracking-wide mb-1">Skor Essay</p>
+                        <p class="text-2xl font-bold"><span id="skorEssay">0</span>/100</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-luxury-800 to-luxury-900 text-white p-4 rounded-lg text-center">
+                        <p class="text-xs uppercase tracking-wide mb-1">Total Skor</p>
+                        <p class="text-2xl font-bold"><span id="totalSkor">0</span>/200</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-luxury-gold to-yellow-600 text-luxury-900 p-4 rounded-lg text-center">
+                        <p class="text-xs uppercase tracking-wide mb-1">Nilai Akhir</p>
+                        <p class="text-2xl font-bold"><span id="nilaiAkhir">0</span></p>
+                    </div>
+                </div>
+
+                <!-- Predikat -->
+                <div id="predikatBox" class="text-center p-4 rounded-lg mb-6 bg-luxury-cream border border-luxury-gold/30">
+                    <p class="text-sm text-gray-600 mb-1">Predikat Anda:</p>
+                    <p id="predikat" class="text-2xl font-bold text-luxury-900">-</p>
+                </div>
+
+                <!-- Tombol Aksi -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <button onclick="unduhPDF()" class="inline-flex items-center justify-center px-5 py-3 bg-luxury-900 text-white rounded-lg font-semibold hover:bg-luxury-800 transition">
+                        <i class="fas fa-file-pdf mr-2"></i> 📥 UNDUH PDF LENGKAP
+                    </button>
+                    <button onclick="unduhSkor()" class="inline-flex items-center justify-center px-5 py-3 bg-luxury-800 text-white rounded-lg font-semibold hover:bg-luxury-900 transition">
+                        <i class="fas fa-download mr-2"></i> 📊 UNDUH SKOR SAJA
+                    </button>
+                    <button onclick="kirimEmail()" class="inline-flex items-center justify-center px-5 py-3 gold-gradient-bg text-luxury-900 rounded-lg font-bold hover:shadow-lg transition sm:col-span-2">
+                        <i class="fas fa-envelope mr-2"></i> ✉️ Kirim Email ke Guru Pengampu
+                    </button>
+                    <button onclick="mulaiUlang()" class="inline-flex items-center justify-center px-5 py-3 bg-gray-200 text-gray-800 rounded-lg font-semibold hover:bg-gray-300 transition sm:col-span-2">
+                        <i class="fas fa-redo mr-2"></i> 🔄 MULAI ULANG
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigasi Bawah -->
+        <div class="flex flex-wrap justify-between items-center mt-10 gap-3">
+            <a href="index.html" class="inline-flex items-center px-5 py-3 bg-gray-100 text-luxury-900 rounded-lg font-semibold hover:bg-gray-200 transition border border-gray-300">
+                <i class="fas fa-home mr-2"></i> Kembali ke Beranda
+            </a>
+            <div class="flex gap-3">
+                <a href="4.html" class="inline-flex items-center px-5 py-3 bg-luxury-900 text-white rounded-lg font-semibold hover:bg-luxury-800 transition border border-luxury-gold/30">
+                    <i class="fas fa-book mr-2"></i> Materi Bab 4
+                </a>
+                <a href="5.html" class="inline-flex items-center px-5 py-3 gold-gradient-bg text-luxury-900 rounded-lg font-bold hover:shadow-lg transition">
+                    Lanjut ke Bab 5 <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 text-gray-400 py-10 border-t border-luxury-gold/20 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-serif text-xl font-bold mb-4">P.P. Diniyah Limo Jurai</h3>
+                    <p class="text-sm leading-relaxed">Mencetak generasi yang memahami hukum Islam secara mendalam, moderat, dan relevan dengan perkembangan zaman.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-serif text-xl font-bold mb-4">Kontak Penulis</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-user mr-2 text-luxury-gold"></i> Firman Hidayat, Lc., M.H.</li>
+                        <li><i class="fas fa-envelope mr-2 text-luxury-gold"></i> firmansawirnelimar@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2 text-luxury-gold"></i> Limo Jurai</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-serif text-xl font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-luxury-gold transition">Beranda</a></li>
+                        <li><a href="index.html#daftar-bab" class="hover:text-luxury-gold transition">Daftar Bab</a></li>
+                        <li><a href="4.html" class="hover:text-luxury-gold transition">Materi Bab 4</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 Firman Hidayat, Lc., M.H. - P.P. Diniyah Limo Jurai. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const kunciJawaban = {
+            q1: 'b',   // mutawatir
+            q2: 'b',   // dharuri
+            q3: 'c',   // masyhur
+            q4: 'b',   // aziz
+            q5: 'a',   // gharib
+            q6: 'b',   // mursal
+            q7: 'b',   // mu'dhal
+            q8: 'b',   // mutawatir didahulukan
+            q9: 'c',   // akidah
+            q10: 'c'   // mutawatir 'amali
+        };
+
+        document.querySelectorAll('.radio-option').forEach(option => {
+            option.addEventListener('click', function() {
+                const radio = this.querySelector('input[type="radio"]');
+                radio.checked = true;
+                const name = radio.name;
+                document.querySelectorAll(`input[name="${name}"]`).forEach(r => {
+                    r.closest('.radio-option').classList.remove('selected');
+                });
+                this.classList.add('selected');
+            });
+        });
+
+        document.getElementById('tanggalUjian').valueAsDate = new Date();
+
+        document.getElementById('ujianForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nama = document.getElementById('namaSiswa').value.trim();
+            const nis = document.getElementById('nisSiswa').value.trim();
+            const kelas = document.getElementById('kelasSiswa').value;
+            const tanggal = document.getElementById('tanggalUjian').value;
+
+            if (!nama || !nis || !kelas) {
+                alert('⚠️ Mohon lengkapi data siswa (Nama, NIS, dan Kelas) terlebih dahulu!');
+                return;
+            }
+
+            let skorPG = 0;
+            let pgDetail = [];
+            
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (jawaban) {
+                    if (jawaban.value === kunciJawaban[`q${i}`]) {
+                        skorPG += 10;
+                        pgDetail.push({ soal: i, benar: true });
+                    } else {
+                        pgDetail.push({ soal: i, benar: false });
+                    }
+                } else {
+                    pgDetail.push({ soal: i, benar: false });
+                }
+            }
+
+            let skorEssay = 0;
+            const essayKeyword = {
+                essay1: ['mutawatir', 'ahad', 'perawi', 'dalalah', 'dharuri', 'zhanni', 'qath\'i', 'hujjah'],
+                essay2: ['lafzhi', 'makna

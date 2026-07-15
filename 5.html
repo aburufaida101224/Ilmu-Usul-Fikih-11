@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 5: Fungsi Bayan Sunnah | Ilmu Usul Fikih Kelas 11 Semester 1</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#022c22',
+                            800: '#064e3b',
+                            gold: '#d4af37',
+                            goldlight: '#f3e5ab',
+                            cream: '#fafaf9',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                        arabic: ['"Amiri"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            direction: rtl;
+            font-size: 1.5rem;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body class="bg-luxury-cream text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-luxury-900 border-b border-luxury-gold/20 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center py-4 space-y-3 sm:space-y-0">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-book-open text-luxury-gold text-xl"></i>
+                    <a href="index.html" class="font-serif text-lg text-white font-semibold tracking-wide hover:text-luxury-gold transition">
+                        Ilmu Usul Fikih Kelas 11
+                    </a>
+                </div>
+                <nav class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
+                    <a href="index.html" class="text-gray-300 hover:text-luxury-gold transition flex items-center gap-1">
+                        <i class="fas fa-home text-xs"></i> Beranda
+                    </a>
+                    <span class="text-luxury-gold/30 hidden sm:inline">|</span>
+                    <a href="index.html#daftar-bab" class="text-gray-300 hover:text-luxury-gold transition flex items-center gap-1">
+                        <i class="fas fa-list text-xs"></i> Daftar Bab
+                    </a>
+                    <span class="text-luxury-gold/30 hidden sm:inline">|</span>
+                    <a href="index.html#penulis" class="text-gray-300 hover:text-luxury-gold transition flex items-center gap-1">
+                        <i class="fas fa-user text-xs"></i> Penulis
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+        
+        <!-- Judul Bab -->
+        <div class="text-center mb-10">
+            <span class="inline-block px-4 py-1 border border-luxury-gold/30 rounded-full bg-luxury-gold/10 text-luxury-gold text-sm font-medium tracking-wider uppercase mb-4">
+                Bab 5
+            </span>
+            <h1 class="font-serif text-4xl sm:text-5xl font-bold text-luxury-900 mb-4">
+                Fungsi Bayan <span class="gold-gradient-text">Sunnah</span>
+            </h1>
+            <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                Kajian mendalam tentang peran Al-Sunnah dalam menjelaskan, memperkuat, dan menetapkan hukum yang bersumber dari Al-Quran. Memahami tiga fungsi utama: Bayan Ta'kid, Bayan Tafsir, dan Bayan Tasyri'.
+            </p>
+        </div>
+
+        <!-- Tombol Navigasi Cepat -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <a href="4.html" class="inline-flex items-center px-6 py-3 bg-gray-100 text-luxury-900 rounded-lg font-semibold hover:bg-gray-200 transition border border-gray-300">
+                <i class="fas fa-arrow-left mr-2"></i> Bab Sebelumnya
+            </a>
+            <a href="uji-formatif-5.html" target="_blank" class="inline-flex items-center px-6 py-3 gold-gradient-bg text-luxury-900 rounded-lg font-bold hover:shadow-lg hover:shadow-luxury-gold/20 transition">
+                <i class="fas fa-clipboard-check mr-2"></i> Uji Formatif Bab 5
+            </a>
+            <a href="6.html" class="inline-flex items-center px-6 py-3 bg-luxury-900 text-white rounded-lg font-semibold hover:bg-luxury-800 transition border border-luxury-gold/30">
+                Bab Selanjutnya <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+
+        <!-- Isi Materi -->
+        <div class="space-y-12">
+            
+            <!-- Bagian A: Pengertian Bayan Sunnah -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">A</span>
+                    Pengertian Fungsi Bayan Sunnah
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">
+                        Kata <strong>Bayan</strong> (البيان) secara etimologis berarti "penjelasan", "penyingkapan", atau "penerangan". Dalam terminologi Usul Fikih, <strong>Bayan Sunnah</strong> adalah fungsi Al-Sunnah dalam menjelaskan, memperkuat, atau menetapkan hukum yang berkaitan dengan Al-Quran.
+                    </p>
+                    <p class="mb-4">
+                        Fungsi Bayan Sunnah merupakan manifestasi dari kedudukan Al-Sunnah sebagai sumber hukum kedua yang tidak dapat dipisahkan dari Al-Quran. Tanpa Sunnah, banyak hukum dalam Al-Quran yang bersifat global (<em>mujmal</em>) tidak dapat diamalkan secara praktis.
+                    </p>
+                    
+                    <div class="bg-luxury-900 text-white p-5 rounded-lg my-6">
+                        <p class="arabic-text text-center text-luxury-goldlight mb-2">وَأَنْزَلْنَا إِلَيْكَ الذِّكْرَ لِتُبَيِّنَ لِلنَّاسِ مَا نُزِّلَ إِلَيْهِمْ</p>
+                        <p class="text-center text-sm italic text-gray-300">"Dan Kami turunkan kepadamu Al-Quran, agar engkau menerangkan kepada umat manusia apa yang telah diturunkan kepada mereka." (QS. An-Nahl: 44)</p>
+                    </div>
+
+                    <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold my-6">
+                        <p class="font-semibold text-luxury-900 mb-2">Definisi Menurut Para Ahli:</p>
+                        <ul class="list-disc pl-5 space-y-2 text-sm">
+                            <li><strong>Imam Syafi'i:</strong> Sunnah berfungsi sebagai penjelas (bayan) terhadap Al-Quran, baik dalam hal yang bersifat global maupun yang memerlukan rincian.</li>
+                            <li><strong>Prof. Dr. Wahbah Az-Zuhaili:</strong> Bayan Sunnah adalah penjelasan yang diberikan oleh Nabi SAW terhadap ayat-ayat Al-Quran, baik dengan perkataan, perbuatan, maupun ketetapan.</li>
+                            <li><strong>Abdul Wahhab Khallaf:</strong> Fungsi bayan Sunnah mencakup tiga aspek utama: penguatan (ta'kid), penjelasan (tafsir), dan penetapan hukum baru (tasyri').</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian B: Bayan Ta'kid -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">B</span>
+                    Bayan Ta'kid (Penguat)
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">
+                        <strong>Bayan Ta'kid</strong> (تأكيد) adalah fungsi Sunnah yang <strong>memperkuat dan menegaskan</strong> hukum yang sudah ada dalam Al-Quran. Dalam fungsi ini, Sunnah tidak menambah atau mengubah hukum, melainkan hanya mengukuhkan apa yang telah ditetapkan Al-Quran.
+                    </p>
+                    
+                    <h3 class="font-serif text-xl font-bold text-luxury-800 mt-6 mb-3">Macam-Macam Ta'kid:</h3>
+                    
+                    <div class="space-y-4 my-6">
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">1. Ta'kid Amr (تأكيد الأمر)</h4>
+                            <p class="text-sm mb-2">Menguatkan perintah yang ada dalam Al-Quran.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Contoh:</strong> Al-Quran memerintahkan shalat (QS. Al-Baqarah: 43), Sunnah menguatkan dengan banyak hadits seperti "Shalatlah kalian sebagaimana kalian melihat aku shalat." (HR. Bukhari)</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">2. Ta'kid Nahy (تأكيد النهي)</h4>
+                            <p class="text-sm mb-2">Menguatkan larangan yang ada dalam Al-Quran.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Contoh:</strong> Al-Quran melarang riba (QS. Al-Baqarah: 275), Sunnah menguatkan dengan hadits "Dirham riba yang dimakan seseorang dalam keadaan jahiliyah lebih berat dosanya daripada 36 kali zina." (HR. Ahmad)</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">3. Ta'kid dengan Perbuatan (تأكيد بالفعل)</h4>
+                            <p class="text-sm mb-2">Nabi SAW sendiri mengamalkan perintah Al-Quran sebagai bentuk penguatan.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Contoh:</strong> Nabi SAW melaksanakan haji setelah Al-Quran mewajibkannya, sehingga dikenal "haji wada'" (haji perpisahan) yang menjadi panduan umat.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold my-6">
+                        <p class="font-semibold text-luxury-900 mb-2">Hukum Bayan Ta'kid:</p>
+                        <p class="text-sm">Bayan Ta'kid <strong>tidak menghasilkan hukum baru</strong>, melainkan hanya mengukuhkan hukum yang sudah ada. Oleh karena itu, pengamalan Bayan Ta'kid bersifat <strong>wajib</strong> karena hukum asalnya sudah wajib dalam Al-Quran.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian C: Bayan Tafsir -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">C</span>
+                    Bayan Tafsir (Penjelas)
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">
+                        <strong>Bayan Tafsir</strong> (تفسير) adalah fungsi Sunnah yang <strong>menjelaskan dan merinci</strong> hukum yang masih global (<em>mujmal</em>) dalam Al-Quran. Ini adalah fungsi yang paling banyak ditemukan dalam Sunnah Nabi SAW.
+                    </p>
+                    
+                    <h3 class="font-serif text-xl font-bold text-luxury-800 mt-6 mb-3">Macam-Macam Bayan Tafsir:</h3>
+                    
+                    <div class="space-y-4 my-6">
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">1. Tafsir Mujmal (تفسير المجمل)</h4>
+                            <p class="text-sm mb-2">Menjelaskan hukum yang masih global dalam Al-Quran.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Contoh:</strong> Al-Quran memerintahkan "Dirikanlah shalat" secara global, Sunnah menjelaskan tata caranya: jumlah rakaat, bacaan, gerakan, waktu, syarat, dan rukun.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">2. Takhsis 'Am (تخصيص العام)</h4>
+                            <p class="text-sm mb-2">Mengkhususkan ayat yang bersifat umum.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Contoh:</strong> QS. Al-Ma'idah: 3 mengharamkan "bangkai" secara umum, Sunnah mentakhsisnya dengan hadits "Dihalalkan bagi kita dua bangkai dan dua darah: ikan dan belalang (bangkai), serta hati dan limpa (darah)." (HR. Ibnu Majah)</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">3. Taqyid Mutlaq (تقييد المطلق)</h4>
+                            <p class="text-sm mb-2">Memberi batasan pada hukum yang bersifat mutlak (tanpa syarat).</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Contoh:</strong> Al-Quran memerintahkan potong tangan bagi pencuri (QS. Al-Ma'idah: 38) secara mutlak, Sunnah membatasi dengan syarat: mencuri mencapai nishab (batas minimum) dan disimpan di tempat yang layak (hirz).</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">4. Tafsir Lafaz Musytarak (تفسير المشترك)</h4>
+                            <p class="text-sm mb-2">Menjelaskan makna lafaz yang memiliki banyak arti.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Contoh:</strong> Kata "quru'" dalam QS. Al-Baqarah: 228 bisa berarti "haidh" atau "suci", Sunnah menjelaskan bahwa yang dimaksud adalah "haidh" menurut mayoritas ulama.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold my-6">
+                        <p class="font-semibold text-luxury-900 mb-2">Hukum Bayan Tafsir:</p>
+                        <p class="text-sm">Bayan Tafsir <strong>tidak dapat dipisahkan</strong> dari Al-Quran karena berfungsi menjelaskan maksud Allah. Pengamalannya bersifat <strong>wajib</strong> karena tanpa penjelasan Sunnah, hukum Al-Quran tidak dapat dilaksanakan secara sempurna.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian D: Bayan Tasyri' -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">D</span>
+                    Bayan Tasyri' (Penetapan Hukum Baru)
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">
+                        <strong>Bayan Tasyri'</strong> (تشريع) adalah fungsi Sunnah yang <strong>menetapkan hukum baru</strong> yang tidak disebutkan secara eksplisit dalam Al-Quran. Fungsi ini menunjukkan bahwa Nabi SAW memiliki otoritas legislasi yang berasal dari wahyu Allah.
+                    </p>
+                    
+                    <div class="bg-luxury-900 text-white p-5 rounded-lg my-6">
+                        <p class="arabic-text text-center text-luxury-goldlight mb-2">وَمَا يَنْطِقُ عَنِ الْهَوَىٰ إِنْ هُوَ إِلَّا وَحْيٌ يُوحَىٰ</p>
+                        <p class="text-center text-sm italic text-gray-300">"Dan tiadalah yang diucapkannya itu (Al-Quran) menurut kemauan hawa nafsunya. Ucapannya itu tiada lain hanyalah wahyu yang diwahyukan (kepadanya)." (QS. An-Najm: 3-4)</p>
+                    </div>
+
+                    <h3 class="font-serif text-xl font-bold text-luxury-800 mt-6 mb-3">Contoh Bayan Tasyri':</h3>
+                    
+                    <div class="space-y-4 my-6">
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">1. Haramnya Binatang Buas Bertaring</h4>
+                            <p class="text-sm">Al-Quran hanya mengharamkan bangkai, darah, babi, dan hewan yang disembelih tanpa nama Allah. Sunnah menambah: haramnya binatang buas bertaring (singa, harimau, serigala) dan burung bercakar (elang, rajawali).</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Dalil:</strong> "Nabi SAW melarang memakan setiap binatang buas yang bertaring." (HR. Muslim)</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">2. Haramnya Menikahi Wanita Bersamaan dengan Bibinya</h4>
+                            <p class="text-sm">Al-Quran menyebutkan wanita-wanita yang haram dinikahi (mahram), tetapi tidak menyebut bibi (saudara ibu/ayah). Sunnah menetapkan: tidak boleh menikahi wanita sekaligus dengan bibinya selama bibinya masih dalam ikatan pernikahan.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Dalil:</strong> "Tidak boleh mengumpulkan (dalam pernikahan) antara seorang wanita dengan bibinya." (HR. Bukhari Muslim)</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">3. Kewajiban Zakat Fitrah</h4>
+                            <p class="text-sm">Al-Quran memerintahkan zakat secara umum, tetapi tidak merinci zakat fitrah. Sunnah menetapkan kewajiban zakat fitrah sebesar satu sha' (± 3 kg) bahan makanan pokok pada bulan Ramadhan.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Dalil:</strong> "Rasulullah SAW mewajibkan zakat fitrah satu sha' kurma atau satu sha' gandum..." (HR. Bukhari Muslim)</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">4. Haramnya Emas dan Sutra bagi Laki-laki</h4>
+                            <p class="text-sm">Al-Quran tidak secara eksplisit mengharamkan emas dan sutra bagi laki-laki. Sunnah menetapkan larangan ini sebagai bentuk penjagaan terhadap fitrah laki-laki dan pencegahan tabzir.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Dalil:</strong> "Emas dan sutra dihalalkan bagi wanita umatku dan diharamkan bagi laki-lakinya." (HR. An-Nasa'i)</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold my-6">
+                        <p class="font-semibold text-luxury-900 mb-2">Hukum Bayan Tasyri':</p>
+                        <p class="text-sm">Bayan Tasyri' <strong>menghasilkan hukum baru</strong> yang wajib diamalkan karena bersumber dari wahyu Allah kepada Nabi SAW. Hukum ini memiliki kekuatan yang sama dengan hukum yang ditetapkan Al-Quran, karena keduanya bersumber dari Allah.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian E: Studi Kasus -->
+            <section class="bg-luxury-900 text-white p-8 rounded-2xl shadow-xl border border-luxury-gold/30">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center">
+                    <i class="fas fa-lightbulb mr-3"></i> E. Studi Kasus: Aplikasi Bayan Sunnah dalam Hukum Kontemporer
+                </h2>
+                <div class="space-y-4 text-gray-200">
+                    <p><strong>Kasus:</strong> Hukum Transaksi Cryptocurrency dan NFT dalam Perspektif Bayan Sunnah.</p>
+                    <p>
+                        Di era digital, muncul aset digital seperti cryptocurrency (Bitcoin, Ethereum) dan NFT (Non-Fungible Token). Al-Quran tidak menyebutkan secara eksplisit tentang aset digital ini. Bagaimana Bayan Sunnah membantu menentukan hukumnya?
+                    </p>
+                    <p>
+                        <strong>Analisis dengan Bayan Sunnah:</strong>
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 text-sm">
+                        <li><strong>Bayan Ta'kid:</strong> Prinsip "Tijaratu 'an taradin" (perniagaan atas dasar kerelaan) dalam Sunnah menguatkan prinsip umum dalam QS. An-Nisa: 29 bahwa transaksi harus dilakukan dengan ridha kedua belah pihak.</li>
+                        <li><strong>Bayan Tafsir:</strong> Sunnah menjelaskan bahwa harta (mal) harus memiliki nilai (qimah), dapat disimpan (hifz), dan bermanfaat (naf'). Cryptocurrency yang memiliki ketiga sifat ini dapat dikategorikan sebagai mal.</li>
+                        <li><strong>Bayan Tasyri':</strong> Sunnah menetapkan kaidah "La dharara wa la dhirar" (tidak boleh membahayakan) yang menjadi dasar larangan transaksi yang mengandung spekulasi tinggi (gharar) atau unsur judi (maysir) dalam cryptocurrency.</li>
+                    </ul>
+                    <p class="mt-4">
+                        <strong>Kesimpulan:</strong> Melalui tiga fungsi Bayan Sunnah, dapat disimpulkan bahwa cryptocurrency yang memenuhi syarat (memiliki nilai, tidak mengandung gharar/riba/maysir) hukumnya boleh, sedangkan yang spekulatif hukumnya haram.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Bagian F: Tabel Perbandingan -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-6 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">F</span>
+                    Analisis Perbandingan: Tiga Fungsi Bayan Sunnah
+                </h2>
+                <div class="overflow-x-auto rounded-lg border border-gray-200">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-luxury-900 text-white">
+                                <th class="p-4 font-semibold border-b border-luxury-gold/30">Aspek Pembeda</th>
+                                <th class="p-4 font-semibold border-b border-luxury-gold/30 text-luxury-gold">Bayan Ta'kid</th>
+                                <th class="p-4 font-semibold border-b border-luxury-gold/30 text-luxury-gold">Bayan Tafsir</th>
+                                <th class="p-4 font-semibold border-b border-luxury-gold/30 text-luxury-gold">Bayan Tasyri'</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            <tr class="bg-gray-50">
+                                <td class="p-4 font-semibold border-b border-gray-200">Fungsi Utama</td>
+                                <td class="p-4 border-b border-gray-200">Memperkuat hukum yang ada</td>
+                                <td class="p-4 border-b border-gray-200">Menjelaskan hukum yang global</td>
+                                <td class="p-4 border-b border-gray-200">Menetapkan hukum baru</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="p-4 font-semibold border-b border-gray-200">Hubungan dengan Al-Quran</td>
+                                <td class="p-4 border-b border-gray-200">Sejalan, tidak menambah</td>
+                                <td class="p-4 border-b border-gray-200">Merinci dan menjelaskan</td>
+                                <td class="p-4 border-b border-gray-200">Menambah hukum baru</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="p-4 font-semibold border-b border-gray-200">Menghasilkan Hukum Baru?</td>
+                                <td class="p-4 border-b border-gray-200">Tidak</td>
+                                <td class="p-4 border-b border-gray-200">Tidak (hanya menjelaskan)</td>
+                                <td class="p-4 border-b border-gray-200">Ya</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="p-4 font-semibold border-b border-gray-200">Contoh</td>
+                                <td class="p-4 border-b border-gray-200">Hadits tentang shalat menguatkan perintah Al-Quran</td>
+                                <td class="p-4 border-b border-gray-200">Tata cara shalat yang tidak ada di Al-Quran</td>
+                                <td class="p-4 border-b border-gray-200">Haramnya binatang buas bertaring</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="p-4 font-semibold">Status Kehujjahan</td>
+                                <td class="p-4">Wajib diamalkan (karena hukum asal sudah wajib)</td>
+                                <td class="p-4">Wajib diamalkan (karena bagian dari hukum Al-Quran)</td>
+                                <td class="p-4">Wajib diamalkan (karena bersumber dari wahyu)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Bagian G: Poin Ujian -->
+            <section class="bg-luxury-gold/10 border border-luxury-gold/30 p-8 rounded-2xl">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <i class="fas fa-star text-luxury-gold mr-3"></i> G. Poin Penting untuk Ujian
+                </h2>
+                <ul class="space-y-3 text-gray-800">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Pahami pengertian Bayan Sunnah dan dalil utamanya (QS. An-Nahl: 44).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Kuasai 3 fungsi Bayan Sunnah: Ta'kid (penguat), Tafsir (penjelas), Tasyri' (penetapan hukum baru).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Hafalkan macam-macam Ta'kid: Ta'kid Amr, Ta'kid Nahy, Ta'kid dengan Perbuatan.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Pahami 4 macam Bayan Tafsir: Tafsir Mujmal, Takhsis 'Am, Taqyid Mutlaq, Tafsir Lafaz Musytarak.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Siapkan contoh konkret Bayan Tasyri': haramnya binatang buas bertaring, zakat fitrah, emas/sutra bagi laki-laki.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Pahami perbedaan antara ketiga fungsi Bayan dalam hal menghasilkan hukum baru atau tidak.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Siapkan analisis kasus kontemporer menggunakan tiga fungsi Bayan Sunnah.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Bagian H: Relevansi -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">H</span>
+                    Relevansi untuk Siswa P.P. Diniyah Limo Jurai
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">
+                        Pemahaman mendalam tentang fungsi Bayan Sunnah memiliki relevansi khusus bagi siswa P.P. Diniyah Limo Jurai:
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 mb-4">
+                        <li><strong>Pemahaman Ibadah yang Benar:</strong> Siswa memahami bahwa tata cara ibadah (shalat, wudhu, haji) yang mereka amalkan sehari-hari bersumber dari Bayan Tafsir Sunnah, bukan langsung dari Al-Quran.</li>
+                        <li><strong>Kemampuan Istinbath Hukum:</strong> Siswa mampu menggali hukum dari Al-Quran dan Sunnah dengan memahami peran masing-masing dalam penetapan hukum.</li>
+                        <li><strong>Filter Informasi:</strong> Di era media sosial, siswa mampu membedakan antara hukum yang berasal dari Al-Quran, Sunnah, atau ijtihad ulama.</li>
+                        <li><strong>Penyelesaian Masalah Kontemporer:</strong> Siswa mampu menerapkan kaidah Bayan Sunnah dalam menyelesaikan masalah modern yang tidak ada di zaman Nabi.</li>
+                        <li><strong>Moderasi Beragama:</strong> Memahami bahwa Islam memiliki metodologi yang ketat dalam menerima ajaran, sehingga tidak mudah terjebak dalam pemahaman yang ekstrem.</li>
+                        <li><strong>Persiapan Menjadi Dai:</strong> Sebagai calon dai, siswa harus mampu menjelaskan hukum Islam dengan merujuk pada sumber yang benar (Al-Quran dan Sunnah).</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Tombol Navigasi Bawah -->
+        <div class="flex flex-wrap justify-between items-center mt-12 pt-8 border-t border-gray-200">
+            <a href="4.html" class="inline-flex items-center px-6 py-3 bg-gray-100 text-luxury-900 rounded-lg font-semibold hover:bg-gray-200 transition border border-gray-300">
+                <i class="fas fa-arrow-left mr-2"></i> Bab Sebelumnya
+            </a>
+            <div class="flex gap-4">
+                <a href="uji-formatif-5.html" target="_blank" class="inline-flex items-center px-6 py-3 gold-gradient-bg text-luxury-900 rounded-lg font-bold hover:shadow-lg hover:shadow-luxury-gold/20 transition">
+                    <i class="fas fa-clipboard-check mr-2"></i> Uji Formatif Bab 5
+                </a>
+                <a href="6.html" class="inline-flex items-center px-6 py-3 bg-luxury-900 text-white rounded-lg font-semibold hover:bg-luxury-800 transition border border-luxury-gold/30">
+                    Bab Selanjutnya <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 text-gray-400 py-12 border-t border-luxury-gold/20 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-serif text-xl font-bold mb-4">P.P. Diniyah Limo Jurai</h3>
+                    <p class="text-sm leading-relaxed">Mencetak generasi yang memahami hukum Islam secara mendalam, moderat, dan relevan dengan perkembangan zaman berdasarkan Al-Quran dan Sunnah.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-serif text-xl font-bold mb-4">Kontak Penulis</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-user mr-2 text-luxury-gold"></i> Firman Hidayat, Lc., M.H.</li>
+                        <li><i class="fas fa-envelope mr-2 text-luxury-gold"></i> firmansawirnelimar@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2 text-luxury-gold"></i> Limo Jurai</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-serif text-xl font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-luxury-gold transition">Beranda</a></li>
+                        <li><a href="index.html#tentang" class="hover:text-luxury-gold transition">Tentang Buku</a></li>
+                        <li><a href="index.html#daftar-bab" class="hover:text-luxury-gold transition">Daftar Bab</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 Firman Hidayat, Lc., M.H. Hak cipta dilindungi.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <span class="text-gray-500">Buku Daras Usul Fikih Kelas 11</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

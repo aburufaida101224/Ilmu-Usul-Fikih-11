@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 3: Al-Sunnah | Ilmu Usul Fikih Kelas 11 Semester 1</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#022c22',
+                            800: '#064e3b',
+                            gold: '#d4af37',
+                            goldlight: '#f3e5ab',
+                            cream: '#fafaf9',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                        arabic: ['"Amiri"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            direction: rtl;
+            font-size: 1.5rem;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body class="bg-luxury-cream text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-luxury-900 border-b border-luxury-gold/20 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center py-4 space-y-3 sm:space-y-0">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-book-open text-luxury-gold text-xl"></i>
+                    <a href="index.html" class="font-serif text-lg text-white font-semibold tracking-wide hover:text-luxury-gold transition">
+                        Ilmu Usul Fikih Kelas 11
+                    </a>
+                </div>
+                <nav class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
+                    <a href="index.html" class="text-gray-300 hover:text-luxury-gold transition flex items-center gap-1">
+                        <i class="fas fa-home text-xs"></i> Beranda
+                    </a>
+                    <span class="text-luxury-gold/30 hidden sm:inline">|</span>
+                    <a href="index.html#daftar-bab" class="text-gray-300 hover:text-luxury-gold transition flex items-center gap-1">
+                        <i class="fas fa-list text-xs"></i> Daftar Bab
+                    </a>
+                    <span class="text-luxury-gold/30 hidden sm:inline">|</span>
+                    <a href="index.html#penulis" class="text-gray-300 hover:text-luxury-gold transition flex items-center gap-1">
+                        <i class="fas fa-user text-xs"></i> Penulis
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+        
+        <!-- Judul Bab -->
+        <div class="text-center mb-10">
+            <span class="inline-block px-4 py-1 border border-luxury-gold/30 rounded-full bg-luxury-gold/10 text-luxury-gold text-sm font-medium tracking-wider uppercase mb-4">
+                Bab 3
+            </span>
+            <h1 class="font-serif text-4xl sm:text-5xl font-bold text-luxury-900 mb-4">
+                Al-Sunnah <span class="gold-gradient-text">(Sumber Hukum Kedua)</span>
+            </h1>
+            <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                Memahami pengertian, hakikat, macam-macam, kedudukan, dan fungsi Al-Sunnah sebagai sumber hukum Islam kedua setelah Al-Quran. Kajian komprehensif tentang hadits qudsi, sunnah qauliyah, fi'liyah, dan taqririyah.
+            </p>
+        </div>
+
+        <!-- Tombol Navigasi Cepat -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <a href="2.html" class="inline-flex items-center px-6 py-3 bg-gray-100 text-luxury-900 rounded-lg font-semibold hover:bg-gray-200 transition border border-gray-300">
+                <i class="fas fa-arrow-left mr-2"></i> Bab Sebelumnya
+            </a>
+            <a href="uji-formatif-3.html" target="_blank" class="inline-flex items-center px-6 py-3 gold-gradient-bg text-luxury-900 rounded-lg font-bold hover:shadow-lg hover:shadow-luxury-gold/20 transition">
+                <i class="fas fa-clipboard-check mr-2"></i> Uji Formatif Bab 3
+            </a>
+            <a href="4.html" class="inline-flex items-center px-6 py-3 bg-luxury-900 text-white rounded-lg font-semibold hover:bg-luxury-800 transition border border-luxury-gold/30">
+                Bab Selanjutnya <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+
+        <!-- Isi Materi -->
+        <div class="space-y-12">
+            
+            <!-- Bagian A: Pengertian Al-Sunnah -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">A</span>
+                    Pengertian dan Hakikat Al-Sunnah
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">
+                        Secara etimologis, <strong>As-Sunnah</strong> (السنة) berasal dari kata <em>sanna-yasunnu-sunnatan</em> yang berarti "jalan", "kebiasaan", atau "tradisi", baik yang terpuji maupun tercela. Dalam hadis Nabi SAW disebutkan: <em>"Man sanna sunnatan hasanatan..."</em> (Barangsiapa yang membuat jalan/kebiasaan yang baik...).
+                    </p>
+                    <p class="mb-4">
+                        Secara terminologi Usul Fikih, Al-Sunnah didefinisikan sebagai: <strong>"Segala sesuatu yang disandarkan kepada Nabi Muhammad SAW, baik berupa perkataan (<em>qaul</em>), perbuatan (<em>fi'il</em>), ketetapan (<em>taqrir</em>), maupun sifat (khalqiyah atau khuluqiyah)."
+                    </p>
+                    
+                    <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold my-6">
+                        <p class="font-semibold text-luxury-900 mb-2">Definisi Menurut Para Ahli:</p>
+                        <ul class="list-disc pl-5 space-y-2 text-sm">
+                            <li><strong>Imam Syafi'i:</strong> Sunnah adalah segala yang diriwayatkan dari Nabi SAW, baik berupa perkataan, perbuatan, maupun ketetapan, yang menjadi sumber hukum syara'.</li>
+                            <li><strong>Prof. Dr. Wahbah Az-Zuhaili:</strong> Sunnah adalah segala yang disandarkan kepada Nabi SAW selain Al-Quran, baik berupa perkataan, perbuatan, maupun taqrir, yang dapat dijadikan dalil atas hukum syara'.</li>
+                            <li><strong>Abdul Wahhab Khallaf:</strong> Sunnah adalah segala yang ditetapkan dari Nabi SAW selain Al-Quran, baik berupa perkataan, perbuatan, maupun persetujuan, yang berfungsi sebagai penjelas hukum.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-luxury-900 text-white p-5 rounded-lg my-6">
+                        <p class="arabic-text text-center text-luxury-goldlight mb-2">وَمَا آتَاكُمُ الرَّسُولُ فَخُذُوهُ وَمَا نَهَاكُمْ عَنْهُ فَانتَهُوا</p>
+                        <p class="text-center text-sm italic text-gray-300">"Apa yang diberikan Rasul kepadamu, maka terimalah. Dan apa yang dilarangnya bagimu, maka tinggalkanlah." (QS. Al-Hasyr: 7)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian B: Macam-Macam Sunnah -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">B</span>
+                    Macam-Macam Al-Sunnah
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">Al-Sunnah dibagi menjadi beberapa macam berdasarkan bentuk dan substansinya:</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 my-6">
+                        <div class="bg-luxury-cream p-5 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">1. Sunnah Qauliyah (السنة القولية)</h4>
+                            <p class="text-sm mb-2">Segala perkataan Nabi SAW yang didengar oleh para sahabat dan diriwayatkan kepada kita.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Contoh:</strong> Hadits "Innamal a'malu binniyat" (Sesungguhnya amal itu tergantung niatnya) – HR. Bukhari Muslim.</p>
+                        </div>
+                        
+                        <div class="bg-luxury-cream p-5 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">2. Sunnah Fi'liyah (السنة الفعلية)</h4>
+                            <p class="text-sm mb-2">Segala perbuatan Nabi SAW yang dilihat dan diriwayatkan oleh para sahabat.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Contoh:</strong> Tata cara shalat, haji, dan wudhu Nabi SAW – "Shalatlah kalian sebagaimana kalian melihat aku shalat." (HR. Bukhari)</p>
+                        </div>
+                        
+                        <div class="bg-luxury-cream p-5 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">3. Sunnah Taqririyah (السنة التقريرية)</h4>
+                            <p class="text-sm mb-2">Ketetapan atau persetujuan Nabi SAW terhadap perbuatan atau perkataan sahabat yang diketahui oleh beliau, baik secara diam (sukut) maupun pernyataan.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Contoh:</strong> Sahabat memakan daging dhab (biawak gurun) di hadapan Nabi SAW, dan beliau tidak melarangnya – menunjukkan halal.</p>
+                        </div>
+                        
+                        <div class="bg-luxury-cream p-5 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">4. Hadits Qudsi (الحديث القدسي)</h4>
+                            <p class="text-sm mb-2">Perkataan yang disandarkan kepada Allah SWT, namun lafaznya dari Nabi SAW. Berbeda dengan Al-Quran yang lafaz dan maknanya dari Allah.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Contoh:</strong> "Wahai hamba-Ku, sesungguhnya Aku telah mengharamkan kezaliman atas diri-Ku..." (HR. Muslim)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian C: Kedudukan Sunnah -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">C</span>
+                    Kedudukan Al-Sunnah terhadap Al-Quran
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">Al-Sunnah memiliki kedudukan yang sangat penting dalam hukum Islam, yaitu sebagai sumber hukum kedua setelah Al-Quran. Kedudukan ini didasarkan pada:</p>
+                    
+                    <ul class="list-disc pl-5 space-y-2 mb-4">
+                        <li><strong>Dalil Naqli:</strong> QS. An-Nisa: 59 – "Taatilah Allah dan taatilah Rasul (Nya)..."</li>
+                        <li><strong>Dalil Aqli:</strong> Al-Quran banyak yang bersifat global (mujmal), sehingga memerlukan penjelasan dari Sunnah.</li>
+                        <li><strong>Ijma' Sahabat:</strong> Para sahabat selalu merujuk pada Sunnah Nabi ketika tidak menemukan jawaban di Al-Quran.</li>
+                    </ul>
+
+                    <h3 class="font-serif text-xl font-bold text-luxury-800 mt-6 mb-3">Tiga Fungsi Utama Sunnah terhadap Al-Quran:</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-luxury-gold pl-4 py-2 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">1. Bayan Ta'kid (تأكيد)</h4>
+                            <p class="text-sm">Memperkuat dan menegaskan hukum yang sudah ada dalam Al-Quran. Contoh: Perintah shalat dalam Al-Quran dikuatkan oleh banyak hadits Nabi.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-2 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">2. Bayan Tafsir (تفسير)</h4>
+                            <p class="text-sm">Menjelaskan dan merinci hukum yang masih global dalam Al-Quran. Contoh: Al-Quran memerintahkan shalat secara global, Sunnah menjelaskan tata caranya (rakaat, bacaan, gerakan).</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-2 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">3. Bayan Tasyri' (تشريع)</h4>
+                            <p class="text-sm">Menetapkan hukum baru yang tidak disebutkan dalam Al-Quran. Contoh: Haramnya memakan binatang buas bertaring dan burung bercakar, haramnya menikahi wanita sekaligus dengan bibinya.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian D: Kriteria Kesahihan Hadits -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">D</span>
+                    Kriteria Kesahihan Hadits sebagai Sumber Hukum
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">Tidak semua hadits dapat dijadikan sumber hukum. Para ulama menetapkan kriteria kesahihan hadits sebagai berikut:</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 my-6">
+                        <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">Hadits Sahih</h4>
+                            <p class="text-sm mb-2">Hadits yang sanadnya bersambung, diriwayatkan oleh perawi yang adil dan dhabit, tanpa syadz dan 'illat.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Status:</strong> Dapat dijadikan sumber hukum mutlak.</p>
+                        </div>
+                        
+                        <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">Hadits Hasan</h4>
+                            <p class="text-sm mb-2">Hadits yang sanadnya bersambung, diriwayatkan oleh perawi yang adil namun dhabit-nya tidak sempurna, tanpa syadz dan 'illat.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Status:</strong> Dapat dijadikan sumber hukum (menurut jumhur ulama).</p>
+                        </div>
+                        
+                        <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">Hadits Dhaif</h4>
+                            <p class="text-sm mb-2">Hadits yang tidak memenuhi syarat sahih atau hasan, karena sanadnya terputus atau ada perawi yang cacat.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Status:</strong> Tidak dapat dijadikan sumber hukum (kecuali untuk fadha'il amal dengan syarat tertentu).</p>
+                        </div>
+                        
+                        <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">Hadits Maudhu'</h4>
+                            <p class="text-sm mb-2">Hadits palsu yang dibuat-buat dan disandarkan kepada Nabi SAW secara dusta.</p>
+                            <p class="text-xs text-gray-600 italic"><strong>Status:</strong> Haram diriwayatkan dan diamalkan kecuali untuk menjelaskan kepalsuannya.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian E: Studi Kasus -->
+            <section class="bg-luxury-900 text-white p-8 rounded-2xl shadow-xl border border-luxury-gold/30">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center">
+                    <i class="fas fa-lightbulb mr-3"></i> E. Studi Kasus: Aplikasi Sunnah dalam Kehidupan Modern
+                </h2>
+                <div class="space-y-4 text-gray-200">
+                    <p><strong>Kasus:</strong> Hukum Transaksi E-Commerce dan Digital Payment dalam Perspektif Sunnah.</p>
+                    <p>
+                        Di era digital, muncul berbagai bentuk transaksi baru seperti jual beli online, e-wallet, cryptocurrency, dan paylater. Bagaimana Sunnah Nabi SAW dapat menjadi pedoman dalam menentukan hukum transaksi modern ini?
+                    </p>
+                    <p>
+                        <strong>Analisis dengan Sunnah:</strong>
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 text-sm">
+                        <li><strong>Sunnah Qauliyah:</strong> Hadits "Tijaratu 'an taradin" (perniagaan harus atas dasar kerelaan) – QS. An-Nisa: 29 yang dijelaskan oleh hadits. Transaksi digital harus dilakukan dengan ridha kedua belah pihak, tidak ada paksaan atau penipuan.</li>
+                        <li><strong>Sunnah Fi'liyah:</strong> Praktik Nabi dalam jual beli di pasar Madinah dengan prinsip kejujuran, transparansi barang, dan kejelasan harga.</li>
+                        <li><strong>Sunnah Taqririyah:</strong> Nabi menyetujui praktik salam (pesanan barang dengan pembayaran di muka) yang dilakukan penduduk Madinah, yang menjadi dasar legalitas pre-order dan sistem booking modern.</li>
+                        <li><strong>Prinsip Umum:</strong> Hadits "La dharara wa la dhirar" (tidak boleh membahayakan diri sendiri dan orang lain) – menjadi kaidah utama dalam transaksi digital yang tidak boleh mengandung gharar (ketidakjelasan), riba, atau maysir (judi).</li>
+                    </ul>
+                    <p class="mt-4">
+                        <strong>Kesimpulan:</strong> Sunnah Nabi SAW tetap relevan sebagai pedoman hukum transaksi modern, dengan menerapkan prinsip-prinsip universal yang beliau ajarkan pada konteks kekinian.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Bagian F: Tabel Perbandingan -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-6 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">F</span>
+                    Analisis Perbandingan: Hadits Qudsi vs Al-Quran
+                </h2>
+                <div class="overflow-x-auto rounded-lg border border-gray-200">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-luxury-900 text-white">
+                                <th class="p-4 font-semibold border-b border-luxury-gold/30">Aspek Pembeda</th>
+                                <th class="p-4 font-semibold border-b border-luxury-gold/30 text-luxury-gold">Al-Quran</th>
+                                <th class="p-4 font-semibold border-b border-luxury-gold/30 text-luxury-gold">Hadits Qudsi</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            <tr class="bg-gray-50">
+                                <td class="p-4 font-semibold border-b border-gray-200">Sumber Makna</td>
+                                <td class="p-4 border-b border-gray-200">Dari Allah SWT</td>
+                                <td class="p-4 border-b border-gray-200">Dari Allah SWT</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="p-4 font-semibold border-b border-gray-200">Sumber Lafaz</td>
+                                <td class="p-4 border-b border-gray-200">Dari Allah SWT</td>
+                                <td class="p-4 border-b border-gray-200">Dari Nabi SAW (dengan ilham Allah)</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="p-4 font-semibold border-b border-gray-200">Cara Periwayatan</td>
+                                <td class="p-4 border-b border-gray-200">Mutawatir (pasti)</td>
+                                <td class="p-4 border-b border-gray-200">Ada yang ahad (dugaan kuat)</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="p-4 font-semibold border-b border-gray-200">Membacanya</td>
+                                <td class="p-4 border-b border-gray-200">Bernilai ibadah (tilawah)</td>
+                                <td class="p-4 border-b border-gray-200">Tidak bernilai ibadah ritual</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="p-4 font-semibold border-b border-gray-200">Digunakan dalam Shalat</td>
+                                <td class="p-4 border-b border-gray-200">Wajib (membaca Al-Fatihah)</td>
+                                <td class="p-4 border-b border-gray-200">Tidak boleh</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="p-4 font-semibold">Tantangan Mukjizat</td>
+                                <td class="p-4">Ya, mukjizat Nabi Muhammad SAW</td>
+                                <td class="p-4">Bukan mukjizat</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Bagian G: Poin Ujian -->
+            <section class="bg-luxury-gold/10 border border-luxury-gold/30 p-8 rounded-2xl">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <i class="fas fa-star text-luxury-gold mr-3"></i> G. Poin Penting untuk Ujian
+                </h2>
+                <ul class="space-y-3 text-gray-800">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Pahami perbedaan definisi Al-Sunnah secara bahasa (etimologi) dan istilah (terminologi) Usul Fikih.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Kuasai 4 macam Sunnah: Qauliyah, Fi'liyah, Taqririyah, dan Hadits Qudsi beserta contohnya.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Hafalkan 3 fungsi Sunnah terhadap Al-Quran: Bayan Ta'kid, Bayan Tafsir, dan Bayan Tasyri'.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Pahami perbedaan antara Al-Quran dan Hadits Qudsi (sumber lafaz, cara periwayatan, nilai ibadah).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Kuasai 4 tingkatan kualitas hadits: Sahih, Hasan, Dhaif, dan Maudhu' beserta status kehujjahannya.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Siapkan contoh konkret aplikasi Sunnah dalam menyelesaikan masalah kontemporer (transaksi digital, bioetika, dll).</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Bagian H: Relevansi -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">H</span>
+                    Relevansi untuk Siswa P.P. Diniyah Limo Jurai
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">
+                        Pemahaman mendalam tentang Al-Sunnah memiliki relevansi khusus bagi siswa P.P. Diniyah Limo Jurai:
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 mb-4">
+                        <li><strong>Amalan Harian:</strong> Sunnah adalah pedoman praktis dalam ibadah sehari-hari (shalat, wudhu, dzikir, adab makan, dll) yang diamalkan di pesantren.</li>
+                        <li><strong>Ittiba' Nabi:</strong> Menanamkan kecintaan dan keinginan untuk meneladani Nabi SAW dalam setiap aspek kehidupan, bukan hanya ibadah ritual tetapi juga muamalah.</li>
+                        <li><strong>Filter Informasi:</strong> Di era media sosial, siswa mampu memfilter hadits-hadits palsu (maudhu') yang banyak beredar dan tidak mudah terpengaruh oleh ajaran yang tidak bersumber dari Sunnah sahih.</li>
+                        <li><strong>Ijtihad Kontemporer:</strong> Memahami bagaimana Sunnah dapat diterapkan pada masalah baru yang tidak ada di zaman Nabi, dengan tetap berpegang pada prinsip-prinsip universal.</li>
+                        <li><strong>Moderasi Beragama:</strong> Memahami bahwa Sunnah Nabi SAW mengajarkan keseimbangan, tidak ekstrem kiri (liberal) maupun ekstrem kanan (radikal), sesuai dengan prinsip wasathiyah.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Tombol Navigasi Bawah -->
+        <div class="flex flex-wrap justify-between items-center mt-12 pt-8 border-t border-gray-200">
+            <a href="2.html" class="inline-flex items-center px-6 py-3 bg-gray-100 text-luxury-900 rounded-lg font-semibold hover:bg-gray-200 transition border border-gray-300">
+                <i class="fas fa-arrow-left mr-2"></i> Bab Sebelumnya
+            </a>
+            <div class="flex gap-4">
+                <a href="uji-formatif-3.html" target="_blank" class="inline-flex items-center px-6 py-3 gold-gradient-bg text-luxury-900 rounded-lg font-bold hover:shadow-lg hover:shadow-luxury-gold/20 transition">
+                    <i class="fas fa-clipboard-check mr-2"></i> Uji Formatif Bab 3
+                </a>
+                <a href="4.html" class="inline-flex items-center px-6 py-3 bg-luxury-900 text-white rounded-lg font-semibold hover:bg-luxury-800 transition border border-luxury-gold/30">
+                    Bab Selanjutnya <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 text-gray-400 py-12 border-t border-luxury-gold/20 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-serif text-xl font-bold mb-4">P.P. Diniyah Limo Jurai</h3>
+                    <p class="text-sm leading-relaxed">Mencetak generasi yang memahami hukum Islam secara mendalam, moderat, dan relevan dengan perkembangan zaman berdasarkan Al-Quran dan Sunnah.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-serif text-xl font-bold mb-4">Kontak Penulis</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-user mr-2 text-luxury-gold"></i> Firman Hidayat, Lc., M.H.</li>
+                        <li><i class="fas fa-envelope mr-2 text-luxury-gold"></i> firmansawirnelimar@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2 text-luxury-gold"></i> Limo Jurai</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-serif text-xl font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-luxury-gold transition">Beranda</a></li>
+                        <li><a href="index.html#tentang" class="hover:text-luxury-gold transition">Tentang Buku</a></li>
+                        <li><a href="index.html#daftar-bab" class="hover:text-luxury-gold transition">Daftar Bab</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 Firman Hidayat, Lc., M.H. Hak cipta dilindungi.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <span class="text-gray-500">Buku Daras Usul Fikih Kelas 11</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 6: Al-Ijma' | Ilmu Usul Fikih Kelas 11 Semester 1</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#022c22',
+                            800: '#064e3b',
+                            gold: '#d4af37',
+                            goldlight: '#f3e5ab',
+                            cream: '#fafaf9',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                        arabic: ['"Amiri"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            direction: rtl;
+            font-size: 1.5rem;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body class="bg-luxury-cream text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-luxury-900 border-b border-luxury-gold/20 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center py-4 space-y-3 sm:space-y-0">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-users text-luxury-gold text-xl"></i>
+                    <a href="index.html" class="font-serif text-lg text-white font-semibold tracking-wide hover:text-luxury-gold transition">
+                        Ilmu Usul Fikih Kelas 11
+                    </a>
+                </div>
+                <nav class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
+                    <a href="index.html" class="text-gray-300 hover:text-luxury-gold transition flex items-center gap-1">
+                        <i class="fas fa-home text-xs"></i> Beranda
+                    </a>
+                    <span class="text-luxury-gold/30 hidden sm:inline">|</span>
+                    <a href="index.html#daftar-bab" class="text-gray-300 hover:text-luxury-gold transition flex items-center gap-1">
+                        <i class="fas fa-list text-xs"></i> Daftar Bab
+                    </a>
+                    <span class="text-luxury-gold/30 hidden sm:inline">|</span>
+                    <a href="index.html#penulis" class="text-gray-300 hover:text-luxury-gold transition flex items-center gap-1">
+                        <i class="fas fa-user text-xs"></i> Penulis
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+        
+        <!-- Judul Bab -->
+        <div class="text-center mb-10">
+            <span class="inline-block px-4 py-1 border border-luxury-gold/30 rounded-full bg-luxury-gold/10 text-luxury-gold text-sm font-medium tracking-wider uppercase mb-4">
+                Bab 6
+            </span>
+            <h1 class="font-serif text-4xl sm:text-5xl font-bold text-luxury-900 mb-4">
+                Al-Ijma' <span class="gold-gradient-text">(Sumber Hukum Ketiga)</span>
+            </h1>
+            <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                Memahami pengertian, hakikat, dasar hukum, rukun, syarat, macam-macam, dan kehujjahan Al-Ijma' sebagai sumber hukum Islam ketiga setelah Al-Quran dan Al-Sunnah. Kajian komprehensif tentang kesepakatan para mujtahid umat Islam.
+            </p>
+        </div>
+
+        <!-- Tombol Navigasi Cepat -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <a href="5.html" class="inline-flex items-center px-6 py-3 bg-gray-100 text-luxury-900 rounded-lg font-semibold hover:bg-gray-200 transition border border-gray-300">
+                <i class="fas fa-arrow-left mr-2"></i> Bab Sebelumnya
+            </a>
+            <a href="uji-formatif-6.html" target="_blank" class="inline-flex items-center px-6 py-3 gold-gradient-bg text-luxury-900 rounded-lg font-bold hover:shadow-lg hover:shadow-luxury-gold/20 transition">
+                <i class="fas fa-clipboard-check mr-2"></i> Uji Formatif Bab 6
+            </a>
+            <a href="7.html" class="inline-flex items-center px-6 py-3 bg-luxury-900 text-white rounded-lg font-semibold hover:bg-luxury-800 transition border border-luxury-gold/30">
+                Bab Selanjutnya <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+
+        <!-- Isi Materi -->
+        <div class="space-y-12">
+            
+            <!-- Bagian A: Pengertian Al-Ijma' -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">A</span>
+                    Pengertian dan Hakikat Al-Ijma'
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">
+                        Secara etimologis, <strong>Al-Ijma'</strong> (الإجماع) berasal dari kata <em>ajma'a-yujmi'-ijma'an</em> yang berarti "tekad", "kebulatan pendapat", atau "kesepakatan". Dalam Al-Quran, kata ini digunakan dalam QS. Yusuf: 15: <em>"Fa lammaa ajma'ul amra..."</em> (Maka tatkala mereka bulatkan tekad mereka...).
+                    </p>
+                    <p class="mb-4">
+                        Secara terminologi Usul Fikih, Al-Ijma' didefinisikan sebagai: <strong>"Kesepakatan seluruh mujtahid dari umat Muhammad SAW pada suatu masa setelah wafatnya Nabi, terhadap suatu hukum syara'."</strong>
+                    </p>
+                    
+                    <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold my-6">
+                        <p class="font-semibold text-luxury-900 mb-2">Definisi Menurut Para Ahli:</p>
+                        <ul class="list-disc pl-5 space-y-2 text-sm">
+                            <li><strong>Imam Syafi'i:</strong> Ijma' adalah kesepakatan para ulama dari berbagai negeri pada suatu masa tentang suatu hukum syara'.</li>
+                            <li><strong>Prof. Dr. Wahbah Az-Zuhaili:</strong> Kesepakatan seluruh mujtahid dari umat Muhammad SAW setelah wafatnya Nabi SAW pada suatu masa atas suatu hukum syara'.</li>
+                            <li><strong>Abdul Wahhab Khallaf:</strong> Kesepakatan mujtahid-mujtahid umat Islam pada suatu masa setelah wafat Rasulullah SAW atas suatu hukum syara'.</li>
+                            <li><strong>Amir Syarifuddin:</strong> Ijma' adalah kesepakatan seluruh mujtahid dari umat Muhammad SAW pada suatu masa setelah wafatnya Nabi terhadap suatu hukum syara'.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-luxury-900 text-white p-5 rounded-lg my-6">
+                        <p class="arabic-text text-center text-luxury-goldlight mb-2">يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنْكُمْ</p>
+                        <p class="text-center text-sm italic text-gray-300">"Wahai orang-orang yang beriman, taatilah Allah dan taatilah Rasul (Nya), dan ulil amri di antara kamu." (QS. An-Nisa: 59)</p>
+                    </div>
+
+                    <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold my-6">
+                        <p class="font-semibold text-luxury-900 mb-2">Unsur-Unsur Pokok Ijma':</p>
+                        <ul class="list-disc pl-5 space-y-2 text-sm">
+                            <li><strong>Kesepakatan (Ittifaq):</strong> Harus ada kesepakatan bulat dari seluruh mujtahid, bukan mayoritas.</li>
+                            <li><strong>Mujtahid:</strong> Yang bersepakat adalah para mujtahid (ulama yang mampu berijtihad), bukan orang awam.</li>
+                            <li><strong>Umat Muhammad SAW:</strong> Kesepakatan umat Islam secara umum, bukan umat terdahulu.</li>
+                            <li><strong>Setelah wafatnya Nabi:</strong> Ijma' hanya terjadi setelah masa kenabian berakhir.</li>
+                            <li><strong>Pada suatu masa:</strong> Kesepakatan harus terjadi pada satu masa tertentu (satu generasi).</li>
+                            <li><strong>Hukum syara':</strong> Yang disepakati adalah hukum syara', bukan masalah duniawi.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian B: Dasar Hukum Ijma' -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">B</span>
+                    Dasar Hukum Al-Ijma'
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">Kehujjahan (kekuatan hukum) Ijma' didasarkan pada beberapa dalil:</p>
+                    
+                    <h3 class="font-serif text-xl font-bold text-luxury-800 mt-6 mb-3">1. Dalil Al-Quran</h3>
+                    <div class="space-y-3 my-4">
+                        <div class="border-l-4 border-luxury-gold pl-4 py-2 bg-luxury-cream rounded-r-lg">
+                            <p class="text-sm"><strong>QS. An-Nisa: 59:</strong> "Taatilah Allah dan taatilah Rasul (Nya), dan ulil amri di antara kamu." — Perintah taat kepada ulil amri (ulama/pemimpin) menunjukkan bahwa kesepakatan mereka mengikat.</p>
+                        </div>
+                        <div class="border-l-4 border-luxury-gold pl-4 py-2 bg-luxury-cream rounded-r-lg">
+                            <p class="text-sm"><strong>QS. An-Nisa: 115:</strong> "Dan barangsiapa yang menentang Rasul sesudah jelas kebenaran baginya, dan mengikuti jalan yang bukan jalan orang-orang mukmin, Kami biarkan ia berkuasa terhadap kesesatan yang telah dikuasainya itu..." — Ancaman bagi yang menyelisihi jalan orang-orang mukmin menunjukkan wajibnya mengikuti kesepakatan mereka.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif text-xl font-bold text-luxury-800 mt-6 mb-3">2. Dalil Al-Sunnah</h3>
+                    <div class="space-y-3 my-4">
+                        <div class="border-l-4 border-luxury-gold pl-4 py-2 bg-luxury-cream rounded-r-lg">
+                            <p class="text-sm"><strong>Hadits:</strong> "Umatku tidak akan bersepakat atas kesesatan." (HR. Ibnu Majah, Tirmidzi, dan Hakim). Hadits ini menunjukkan bahwa kesepakatan umat Islam pasti benar dan menjadi hujjah.</p>
+                        </div>
+                        <div class="border-l-4 border-luxury-gold pl-4 py-2 bg-luxury-cream rounded-r-lg">
+                            <p class="text-sm"><strong>Hadits:</strong> "Sesungguhnya Allah tidak akan mengumpulkan umatku atas kesesatan. Tangan Allah bersama jama'ah." (HR. Tirmidzi). Menunjukkan bahwa jama'ah (kesepakatan) di bawah perlindungan Allah.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif text-xl font-bold text-luxury-800 mt-6 mb-3">3. Dalil Aqli (Akal)</h3>
+                    <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold my-4">
+                        <p class="text-sm">Secara rasional, jika seluruh mujtahid pada suatu masa bersepakat atas suatu hukum, maka kesepakatan itu pasti benar karena:</p>
+                        <ul class="list-disc pl-5 space-y-1 mt-2">
+                            <li>Mereka adalah orang-orang yang memenuhi syarat ijtihad.</li>
+                            <li>Tidak mungkin seluruh ulama bersepakat dalam kesalahan.</li>
+                            <li>Kesepakatan mereka mencerminkan kemaslahatan umat.</li>
+                            <li>Menjaga persatuan dan mencegah perpecahan dalam umat.</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="font-serif text-xl font-bold text-luxury-800 mt-6 mb-3">4. Ijma' Sahabat</h3>
+                    <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold my-4">
+                        <p class="text-sm">Para sahabat Nabi SAW telah mempraktikkan Ijma' dalam berbagai masalah, seperti:</p>
+                        <ul class="list-disc pl-5 space-y-1 mt-2">
+                            <li>Pengumpulan Al-Quran pada masa Abu Bakar atas usulan Umar bin Khattab.</li>
+                            <li>Penetapan kakek sebagai pengganti ayah dalam waris.</li>
+                            <li>Kompilasi Al-Quran dalam satu mushaf pada masa Utsman bin Affan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian C: Rukun dan Syarat Ijma' -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">C</span>
+                    Rukun dan Syarat Al-Ijma'
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <h3 class="font-serif text-xl font-bold text-luxury-800 mt-6 mb-3">Rukun Ijma':</h3>
+                    <div class="grid md:grid-cols-3 gap-4 my-6">
+                        <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">1. Para Mujtahid</h4>
+                            <p class="text-sm">Orang-orang yang melakukan kesepakatan haruslah mujtahid, yaitu ulama yang memiliki kemampuan untuk menggali hukum dari Al-Quran dan Sunnah.</p>
+                        </div>
+                        <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">2. Kesepakatan Bulat</h4>
+                            <p class="text-sm">Harus ada kesepakatan dari <strong>seluruh</strong> mujtahid pada masa itu, bukan hanya mayoritas. Jika ada satu saja yang berbeda pendapat, maka bukan Ijma'.</p>
+                        </div>
+                        <div class="bg-luxury-cream p-4 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">3. Satu Masa</h4>
+                            <p class="text-sm">Kesepakatan harus terjadi pada satu masa (satu generasi), tidak boleh lintas generasi. Jika generasi berikutnya berbeda, maka bukan Ijma'.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif text-xl font-bold text-luxury-800 mt-6 mb-3">Syarat-Syarat Ijma':</h3>
+                    <div class="space-y-4 my-6">
+                        <div class="border-l-4 border-luxury-gold pl-4 py-2 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">1. Para Mujtahid Harus Adil</h4>
+                            <p class="text-sm">Para mujtahid yang bersepakat harus memiliki sifat adil (tidak fasik), sehingga pendapat mereka dapat dipercaya.</p>
+                        </div>
+                        <div class="border-l-4 border-luxury-gold pl-4 py-2 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">2. Kesepakatan Harus Jelas</h4>
+                            <p class="text-sm">Kesepakatan harus dinyatakan dengan jelas, baik melalui perkataan, tulisan, maupun perbuatan yang menunjukkan persetujuan.</p>
+                        </div>
+                        <div class="border-l-4 border-luxury-gold pl-4 py-2 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">3. Tidak Bertentangan dengan Nash</h4>
+                            <p class="text-sm">Kesepakatan tidak boleh bertentangan dengan nash (Al-Quran dan Sunnah) yang qath'i (pasti).</p>
+                        </div>
+                        <div class="border-l-4 border-luxury-gold pl-4 py-2 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">4. Setelah Wafatnya Nabi</h4>
+                            <p class="text-sm">Ijma' hanya terjadi setelah masa kenabian berakhir. Kesepakatan di masa Nabi bukan disebut Ijma', melainkan wahyu.</p>
+                        </div>
+                        <div class="border-l-4 border-luxury-gold pl-4 py-2 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">5. Tentang Hukum Syara'</h4>
+                            <p class="text-sm">Yang disepakati harus berupa hukum syara', bukan masalah duniawi, teknis, atau ijtihadiyah yang boleh berbeda pendapat.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian D: Macam-Macam Ijma' -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">D</span>
+                    Macam-Macam Al-Ijma'
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">Ijma' dibagi menjadi dua berdasarkan cara penyampaian kesepakatan:</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 my-6">
+                        <div class="bg-luxury-cream p-5 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">1. Ijma' Sharih (الإجماع الصريح)</h4>
+                            <p class="text-sm mb-2">Ijma' yang dinyatakan secara tegas dan jelas oleh seluruh mujtahid, baik melalui perkataan, tulisan, maupun fatwa yang menunjukkan persetujuan bulat.</p>
+                            <p class="text-xs text-gray-600 italic mt-2"><strong>Status Kehujjahan:</strong> Qath'i (pasti), wajib diamalkan, dan tidak boleh ditentang.</p>
+                            <p class="text-xs text-gray-600 mt-2"><strong>Contoh:</strong> Kesepakatan sahabat tentang pengumpulan Al-Quran dalam satu mushaf pada masa Utsman.</p>
+                        </div>
+                        
+                        <div class="bg-luxury-cream p-5 rounded-lg border-l-4 border-luxury-gold">
+                            <h4 class="font-bold text-luxury-900 mb-2">2. Ijma' Sukuti (الإجماع السكوتي)</h4>
+                            <p class="text-sm mb-2">Ijma' yang terjadi ketika sebagian mujtahid menyatakan pendapat, sedangkan yang lain diam (tidak menyanggah), padahal mereka mengetahui pendapat tersebut.</p>
+                            <p class="text-xs text-gray-600 italic mt-2"><strong>Status Kehujjahan:</strong> Zhanni (dugaan kuat), menurut jumhur ulama dapat dijadikan hujjah, namun menurut sebagian ulama (seperti Imam Syafi'i dalam qaul qadim) tidak.</p>
+                            <p class="text-xs text-gray-600 mt-2"><strong>Contoh:</strong> Seorang mujtahid berfatwa tentang suatu masalah, mujtahid lain mengetahuinya tetapi tidak menyanggah.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-luxury-900 text-white p-5 rounded-lg my-6">
+                        <h4 class="font-bold text-luxury-gold mb-3">Perbedaan Ijma' Sharih dan Sukuti:</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-sm text-gray-200">
+                            <li><strong>Cara Penyampaian:</strong> Sharih dinyatakan tegas, Sukuti melalui diam.</li>
+                            <li><strong>Kekuatan Hukum:</strong> Sharih bersifat qath'i (pasti), Sukuti bersifat zhanni (dugaan kuat).</li>
+                            <li><strong>Status Kehujjahan:</strong> Sharih disepakati wajib diamalkan, Sukuti masih diperdebatkan.</li>
+                            <li><strong>Contoh:</strong> Sharih = pengumpulan Al-Quran; Sukuti = fatwa sebagian sahabat yang tidak disanggah yang lain.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian E: Contoh Ijma' dalam Sejarah -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">E</span>
+                    Contoh Ijma' dalam Sejarah Islam
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">Berikut beberapa contoh Ijma' yang diakui oleh para ulama:</p>
+                    
+                    <div class="space-y-4 my-6">
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">1. Ijma' tentang Kewajiban Zakat Fitrah</h4>
+                            <p class="text-sm">Seluruh ulama bersepakat bahwa zakat fitrah wajib dikeluarkan pada bulan Ramadhan sebelum shalat Idul Fitri, berdasarkan hadits Nabi SAW dan kesepakatan para sahabat.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">2. Ijma' tentang Haramnya Riba</h4>
+                            <p class="text-sm">Seluruh ulama bersepakat bahwa riba haram berdasarkan QS. Al-Baqarah: 275 dan hadits-hadits Nabi SAW. Tidak ada perbedaan pendapat dalam masalah ini.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">3. Ijma' tentang Jumlah Rakaat Shalat</h4>
+                            <p class="text-sm">Seluruh ulama bersepakat tentang jumlah rakaat shalat lima waktu: Subuh 2 rakaat, Dzuhur 4 rakaat, Ashar 4 rakaat, Maghrib 3 rakaat, Isya 4 rakaat.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">4. Ijma' Sahabat tentang Pengumpulan Al-Quran</h4>
+                            <p class="text-sm">Para sahabat bersepakat untuk mengumpulkan Al-Quran dalam satu mushaf pada masa Abu Bakar (atas usulan Umar) dan menyatukannya dalam satu versi pada masa Utsman.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">5. Ijma' tentang Haramnya Babi</h4>
+                            <p class="text-sm">Seluruh ulama bersepakat bahwa daging babi haram dikonsumsi berdasarkan QS. Al-Baqarah: 173 dan tidak ada perbedaan pendapat dalam masalah ini.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-luxury-gold pl-4 py-3 bg-luxury-cream rounded-r-lg">
+                            <h4 class="font-bold text-luxury-900">6. Ijma' tentang Kewajiban Haji bagi yang Mampu</h4>
+                            <p class="text-sm">Seluruh ulama bersepakat bahwa haji wajib dilakukan sekali seumur hidup bagi yang mampu, berdasarkan QS. Ali Imran: 97.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian F: Studi Kasus -->
+            <section class="bg-luxury-900 text-white p-8 rounded-2xl shadow-xl border border-luxury-gold/30">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center">
+                    <i class="fas fa-lightbulb mr-3"></i> F. Studi Kasus: Ijma' dalam Konteks Kontemporer
+                </h2>
+                <div class="space-y-4 text-gray-200">
+                    <p><strong>Kasus:</strong> Apakah Mungkin Terjadi Ijma' di Era Modern?</p>
+                    <p>
+                        Di era globalisasi dan teknologi informasi, apakah masih mungkin terjadi Ijma' yang memenuhi syarat-syaratnya? Bagaimana dengan peran lembaga-lembaga fatwa modern seperti MUI (Majelis Ulama Indonesia), Al-Azhar (Mesir), atau Rabithah Alam Islami?
+                    </p>
+                    <p>
+                        <strong>Analisis:</strong>
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 text-sm">
+                        <li><strong>Tantangan:</strong> Di era modern, sulit mengumpulkan seluruh mujtahid dunia dalam satu forum untuk mencapai kesepakatan bulat. Jumlah ulama sangat banyak dan tersebar di berbagai negara.</li>
+                        <li><strong>Alternatif:</strong> Muncul konsep <em>Ijma' Hukmi</em> (kesepakatan yang dihukumi) melalui lembaga-lembaga fatwa internasional yang mewakili ulama dunia.</li>
+                        <li><strong>Contoh:</strong> Keputusan MUI tentang haramnya rokok (meskipun masih diperdebatkan), fatwa Al-Azhar tentang bank syariah, atau keputusan OKI tentang bioetika.</li>
+                        <li><strong>Status:</strong> Keputusan lembaga fatwa modern umumnya dianggap sebagai <em>Ijma' Sukuti</em> atau <em>Fatwa Jama'iyah</em>, bukan Ijma' Sharih yang qath'i.</li>
+                    </ul>
+                    <p class="mt-4">
+                        <strong>Kesimpulan:</strong> Ijma' Sharih sulit terjadi di era modern, namun Ijma' Sukuti atau fatwa kolektif lembaga ulama dapat menjadi pedoman dalam menyelesaikan masalah kontemporer.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Bagian G: Tabel Perbandingan -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-6 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">G</span>
+                    Analisis Perbandingan: Ijma' Sharih vs Ijma' Sukuti
+                </h2>
+                <div class="overflow-x-auto rounded-lg border border-gray-200">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-luxury-900 text-white">
+                                <th class="p-4 font-semibold border-b border-luxury-gold/30">Aspek Pembeda</th>
+                                <th class="p-4 font-semibold border-b border-luxury-gold/30 text-luxury-gold">Ijma' Sharih</th>
+                                <th class="p-4 font-semibold border-b border-luxury-gold/30 text-luxury-gold">Ijma' Sukuti</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            <tr class="bg-gray-50">
+                                <td class="p-4 font-semibold border-b border-gray-200">Cara Penyampaian</td>
+                                <td class="p-4 border-b border-gray-200">Dinyatakan tegas (perkataan/tulisan/fatwa)</td>
+                                <td class="p-4 border-b border-gray-200">Melalui diam (tidak menyanggah)</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="p-4 font-semibold border-b border-gray-200">Kekuatan Dalalah</td>
+                                <td class="p-4 border-b border-gray-200"><em>Qath'i</em> (pasti)</td>
+                                <td class="p-4 border-b border-gray-200"><em>Zhanni</em> (dugaan kuat)</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="p-4 font-semibold border-b border-gray-200">Status Kehujjahan</td>
+                                <td class="p-4 border-b border-gray-200">Wajib diamalkan (disepakati)</td>
+                                <td class="p-4 border-b border-gray-200">Diperdebatkan (jumhur: hujjah, Syafi'i qaul qadim: tidak)</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="p-4 font-semibold border-b border-gray-200">Contoh</td>
+                                <td class="p-4 border-b border-gray-200">Pengumpulan Al-Quran, haramnya riba</td>
+                                <td class="p-4 border-b border-gray-200">Fatwa sebagian sahabat yang tidak disanggah</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="p-4 font-semibold">Kemungkinan di Era Modern</td>
+                                <td class="p-4">Sangat sulit terjadi</td>
+                                <td class="p-4">Masih mungkin melalui fatwa kolektif</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Bagian H: Poin Ujian -->
+            <section class="bg-luxury-gold/10 border border-luxury-gold/30 p-8 rounded-2xl">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <i class="fas fa-star text-luxury-gold mr-3"></i> H. Poin Penting untuk Ujian
+                </h2>
+                <ul class="space-y-3 text-gray-800">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Pahami definisi Ijma' secara bahasa (etimologi) dan istilah (terminologi) Usul Fikih.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Kuasai 6 unsur pokok Ijma': kesepakatan bulat, mujtahid, umat Muhammad SAW, setelah wafat Nabi, satu masa, hukum syara'.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Hafalkan dasar hukum Ijma': QS. An-Nisa: 59, QS. An-Nisa: 115, hadits tentang jama'ah, dan dalil aqli.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Pahami 3 rukun Ijma': para mujtahid, kesepakatan bulat, satu masa.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Kuasai 5 syarat Ijma': adil, jelas, tidak bertentangan nash, setelah wafat Nabi, tentang hukum syara'.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Pahami perbedaan Ijma' Sharih (tegas, qath'i) dan Ijma' Sukuti (diam, zhanni).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Siapkan contoh konkret Ijma': zakat fitrah, haramnya riba, jumlah rakaat shalat, pengumpulan Al-Quran.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-luxury-gold mt-1 mr-3"></i>
+                        <span>Pahami tantangan Ijma' di era modern dan peran lembaga fatwa kontemporer.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Bagian I: Relevansi -->
+            <section class="glass-card p-8 rounded-2xl shadow-sm">
+                <h2 class="font-serif text-2xl font-bold text-luxury-900 mb-4 flex items-center">
+                    <span class="bg-luxury-gold text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">I</span>
+                    Relevansi untuk Siswa P.P. Diniyah Limo Jurai
+                </h2>
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="mb-4">
+                        Pemahaman mendalam tentang Al-Ijma' memiliki relevansi khusus bagi siswa P.P. Diniyah Limo Jurai:
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 mb-4">
+                        <li><strong>Pemahaman Khilafiyah:</strong> Siswa memahami bahwa tidak semua masalah agama memiliki kesepakatan ulama, sehingga harus menghormati perbedaan pendapat (khilafiyah) yang sah.</li>
+                        <li><strong>Sikap terhadap Fatwa:</strong> Siswa mampu membedakan antara fatwa yang berdasarkan Ijma' (wajib diikuti) dan fatwa yang berdasarkan ijtihad individu (boleh berbeda pendapat).</li>
+                        <li><strong>Persatuan Umat:</strong> Memahami pentingnya mengikuti kesepakatan ulama dalam masalah yang sudah jelas (ijma') untuk menjaga persatuan umat Islam.</li>
+                        <li><strong>Filter Informasi:</strong> Di era media sosial, siswa mampu memfilter klaim-klaim "kesepakatan ulama" yang sering disalahgunakan oleh kelompok tertentu.</li>
+                        <li><strong>Persiapan Menjadi Dai:</strong> Sebagai calon dai, siswa harus mampu menjelaskan hukum Islam dengan merujuk pada sumber yang benar (Al-Quran, Sunnah, dan Ijma').</li>
+                        <li><strong>Moderasi Beragama:</strong> Memahami bahwa Islam memiliki metodologi yang ketat dalam menetapkan hukum, sehingga tidak mudah terjebak dalam pemahaman yang ekstrem.</li>
+                        <li><strong>Apresiasi terhadap Ulama:</strong> Menghargai peran para ulama dan mujtahid dalam menjaga kemurnian ajaran Islam melalui kesepakatan mereka.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Tombol Navigasi Bawah -->
+        <div class="flex flex-wrap justify-between items-center mt-12 pt-8 border-t border-gray-200">
+            <a href="5.html" class="inline-flex items-center px-6 py-3 bg-gray-100 text-luxury-900 rounded-lg font-semibold hover:bg-gray-200 transition border border-gray-300">
+                <i class="fas fa-arrow-left mr-2"></i> Bab Sebelumnya
+            </a>
+            <div class="flex gap-4">
+                <a href="uji-formatif-6.html" target="_blank" class="inline-flex items-center px-6 py-3 gold-gradient-bg text-luxury-900 rounded-lg font-bold hover:shadow-lg hover:shadow-luxury-gold/20 transition">
+                    <i class="fas fa-clipboard-check mr-2"></i> Uji Formatif Bab 6
+                </a>
+                <a href="7.html" class="inline-flex items-center px-6 py-3 bg-luxury-900 text-white rounded-lg font-semibold hover:bg-luxury-800 transition border border-luxury-gold/30">
+                    Bab Selanjutnya <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 text-gray-400 py-12 border-t border-luxury-gold/20 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-serif text-xl font-bold mb-4">P.P. Diniyah Limo Jurai</h3>
+                    <p class="text-sm leading-relaxed">Mencetak generasi yang memahami hukum Islam secara mendalam, moderat, dan relevan dengan perkembangan zaman berdasarkan Al-Quran, Sunnah, dan Ijma'.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-serif text-xl font-bold mb-4">Kontak Penulis</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-user mr-2 text-luxury-gold"></i> Firman Hidayat, Lc., M.H.</li>
+                        <li><i class="fas fa-envelope mr-2 text-luxury-gold"></i> firmansawirnelimar@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2 text-luxury-gold"></i> Limo Jurai</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-serif text-xl font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-luxury-gold transition">Beranda</a></li>
+                        <li><a href="index.html#tentang" class="hover:text-luxury-gold transition">Tentang Buku</a></li>
+                        <li><a href="index.html#daftar-bab" class="hover:text-luxury-gold transition">Daftar Bab</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 Firman Hidayat, Lc., M.H. Hak cipta dilindungi.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <span class="text-gray-500">Buku Daras Usul Fikih Kelas 11</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
